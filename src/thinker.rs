@@ -1,11 +1,8 @@
 //! Thinkers are the "brain" of an entity. You attach Scorers to it, and the
 //! Thinker picks the right Action to run based on the resulting Scores.
 
-use std::{
-    collections::VecDeque,
-    sync::Arc,
-    time::{Duration, Instant},
-};
+use std::{collections::VecDeque, sync::Arc};
+use web_time::{Duration, Instant};
 
 use bevy::{
     log::{
